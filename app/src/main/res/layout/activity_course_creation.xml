@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="match_parent"
+    tools:context="com.klabs.projectstove.CourseCreation">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Add a course"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="0.4"
+            android:hint="Course Name"
+            android:id="@+id/course_creation_name"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:hint="Short Form"
+            android:id="@+id/course_creation_abv"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:hint="Number of students"
+        android:id="@+id/course_creation_students"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/course_creation_lectures"
+        android:hint="Number of lectures"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Days of week"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="M"
+            android:id="@+id/course_creation_monday"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="Tu"
+            android:id="@+id/course_creation_tuesday"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="W"
+            android:id="@+id/course_creation_wednesday"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="Th"
+            android:id="@+id/course_creation_thursday"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="F"
+            android:id="@+id/course_creation_friday"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="S"
+            android:id="@+id/course_creation_saturday"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="S"
+            android:id="@+id/course_creation_sunday"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:layout_width="355dp"
+        android:layout_height="135dp"
+        android:id="@+id/course_creation_time"
+        android:timePickerMode="spinner"></TimePicker>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:text="Add course"
+        android:id="@+id/course_creation_add"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_instructor_editProfile"
+            android:title="Edit Profile"
+            />
+        <item
+            android:id="@+id/menu_instructor_showQR"
+            android:title="Show QR Code"
+            />
+        <item
+            android:id="@+id/menu_instructor_settings"
+            android:title="Settings"
+            />
+    </group>
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/student_class_card"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/student_class_card_courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:text="DBMS (AKM)"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/student_class_card_remTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remaining Time - 7:58"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="Submit review:"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:id="@+id/student_class_card_rev1"
+                android:src="@drawable/inlove"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/student_class_card_rev2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/happy"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/student_class_card_rev3"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/confused"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/student_class_card_rev4"
+                android:scaleType="fitCenter"
+                android:src="@drawable/scare"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/student_class_card_rev5"
+                android:src="@drawable/crying"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/student_class_card_day"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Days: M W Th F"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/student_class_card_time"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="7 AM"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

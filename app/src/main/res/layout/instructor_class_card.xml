@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/instructor_card"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#093"
+                    android:id="@+id/instructor_card_feedbackColor"
+                    android:layout_alignParentEnd="true"
+                    />
+                <TextView
+                    android:id="@+id/instructor_card_feedbackCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/instructor_card_courseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Course Name: "
+                android:textSize="18sp"
+                android:gravity="start"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/instructor_card_studentCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Enrollment Ratio: "
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            />
+        <ProgressBar
+            android:id="@+id/instructor_card_seekbar"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:maxHeight="30dp"
+            android:minHeight="20dp"
+            android:clickable="false"
+            android:max="100"
+            android:progress="0"
+            android:scaleY="3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Days: M W Th F"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="7 AM"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
